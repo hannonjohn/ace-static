@@ -10,11 +10,11 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
+    "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve"
   },
   "author": "John Hannon <hannonjohn@gmail.com>",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
   }
