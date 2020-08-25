@@ -3,15 +3,14 @@
   "version": "0.0.1",
   "description": "Allied Consultant Engineering (static)",
   "repository": {
-		"type": "git",
-		"url": "https://github.com/hannonjohn/ace-static"
-	},
+    "type": "git",
+    "url": "https://github.com/hannonjohn/ace-static"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "main": "\"\"",
   "scripts": {
-    "test": "\"\""
+    "start": ""
   },
   "author": "John Hannon <hannonjohn@gmail.com>",
   "license": "ISC"
