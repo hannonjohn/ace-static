@@ -1,5 +1,6 @@
+_site/
 node_modules/
-dist/
+.vscode/
 *.zip
 *.min.js
 *.min.css
