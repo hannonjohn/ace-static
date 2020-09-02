@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "declaration-no-important": true,
+    "unit-whitelist": ["px", "%", "deg", "s"],
+    "no-empty-source": null,
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": null,
+    "selector-class-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+    "color-hex-case": "lower",
+    "color-named": "never",
+    "font-weight-notation": "named-where-possible",
+    "no-empty-first-line": true,
+    "selector-id-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+    "string-quotes": "single",
+    "value-no-vendor-prefix": true
+  }
+}
