@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{pageTitle}} - {{currentPage.title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta rel="shortcut icon" href="{{""}}{{(urlStaticRelative)}}images/favicons/favicon.ico" type="image/x-icon">
+  <meta rel="apple-touch-icon" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon.png">
+  <meta rel="apple-touch-icon" sizes="57x57" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon-57x57.png">
+  <meta rel="apple-touch-icon" sizes="72x72" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon-72x72.png">
+  <meta rel="apple-touch-icon" sizes="76x76" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon-76x76.png">
+  <meta rel="apple-touch-icon" sizes="114x114" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon-114x114.png">
+  <meta rel="apple-touch-icon" sizes="120x120" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon-120x120.png">
+  <meta rel="apple-touch-icon" sizes="144x144" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon-144x144.png">
+  <meta rel="apple-touch-icon" sizes="152x152" href="{{""}}{{(urlStaticRelative)}}images/favicons/apple-touch-icon-152x152.png">
+  <meta name="application-name" content="{{""}}{{(appFullName)}}{{""}}">
+  <meta name="msapplication-TileColor" content="#F3F3F1">
+  <meta name="msapplication-TileImage" content="{{""}}{{(urlStaticRelative)}}images/favicons/windows-8-tile.png">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="{{""}}{{(urlStaticRelative)}}styles/{{(appNameLowercase)}}.min.css">
+  <meta name="description" content="{{""}}{{(appDescription)}}{{""}}">
+  <meta name="keywords" content="{{""}}{{(appKeywords)}}{{""}}">
+  <link rel="canonical" href="{{""}}{{(canonicalUrl)}}{{""}}">
+  <link href="{{'https://fonts.googleapis.com/css?family=Open}}{{Sans'}}" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-80280272-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="http://www.harm6stop.com/js/197279.js"></script><noscript><img src="http://www.harm6stop.com/197279.png" style="display:none;"></noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="pageWrapper">
+    <!-- TODO: Fix unsupported jade include -->
+    include partials/header.jade
+    <div class="bodyWrapper">
+      <div bg="{{""}}{{(currentPage.backgroundClass)}}{{""}}" class="bodyBackground {{""}}{{(currentPage.backgroundClass)}}{{""}}"><img src="{{""}}{{(urlStaticRelative)}}images/backgrounds/compliance.jpg" class="bgImg compliance"><img src="{{""}}{{(urlStaticRelative)}}images/backgrounds/roof.jpg" class="bgImg roof"><img src="{{""}}{{(urlStaticRelative)}}images/backgrounds/structural.jpg" class="bgImg structural"><img src="{{""}}{{(urlStaticRelative)}}images/backgrounds/telecoms.jpg" class="bgImg telecoms"></div><!-- TODO: Fix unsupported jade include -->
+      include partials/notifications.jade
+      <div class="obscurer"></div>
+      <div class="contentWrapper">
+        <div class="bodyContent">
+          <!--block content-->
+        </div>
+      </div>
+    </div><!-- TODO: Fix unsupported jade include -->
+    include partials/footer.jade
+  </div>
+  <script type="text/javascript">
+    <!-- TODO: Fix unsupported jade inline javascript 
+    -->
+    !{
+      labJSScript
+    }
+  <!-- TODO: Fix unsupported jade inline javascript -->
+  var ace = { props: !{JSON.stringify(jsProps)}, currentPage: !{JSON.stringify(currentPage)} };
+  var externalJS = '{{urlStaticRelative}}scripts/{{appNameLowercase}}-external.min.js';
+  var internalJS = '{{urlStaticRelative}}scripts/{{appNameLowercase}}-internal.min.js';
+  var start = function () { $(document).ready(ace.init); };
+  $LAB.script(externalJS).wait().script(internalJS).wait(start);
+  </script>
+</body>
+
+</html>

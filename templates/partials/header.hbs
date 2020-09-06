@@ -1,0 +1,19 @@
+<header class="main">
+  <div class="contentWrapper"><a href="{{""}}{{(urlRelative)}}{{""}}" page="{{""}}{{(JSON.stringify(mainPages.home))}}{{""}}" class="logo lnk"><img src="{{""}}{{(urlStaticRelative)}}images/logos/logo.png" alt="{{""}}{{(appFullName)}}{{""}}" title="{{""}}{{(appFullName)}}{{""}}" class="img"></a>
+    <nav class="main">
+      <div class="actionShowMenu"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div>
+      <ul class="menu">
+        <li class="main noSubMenu"><a href="{{""}}{{(urlRelative)}}{{""}}" page="{{""}}{{(JSON.stringify(mainPages.home))}}{{""}}" class="lnk">{{mainPages.home.title}}</a></li>
+        <li class="main withSubMenu"><a class="lnk nolnk"><span class="text">Services</span><span class="icon plus">+</span><span class="icon minus">-</span></a>
+          <ul class="subMenu">
+            <li class="sub"><a href="{{""}}{{(urlRelative}}{{servicePages.structuralAnalysisAndDesign.page)}}{{""}}" page="{{""}}{{(JSON.stringify(servicePages.structuralAnalysisAndDesign))}}{{""}}" class="lnk">{{servicePages.structuralAnalysisAndDesign.title}}</a></li>
+            <li class="sub"><a href="{{""}}{{(urlRelative}}{{servicePages.telecomsStructuralEngineering.page)}}{{""}}" page="{{""}}{{(JSON.stringify(servicePages.telecomsStructuralEngineering))}}{{""}}" class="lnk">{{servicePages.telecomsStructuralEngineering.title}}</a></li>
+            <li class="sub"><a href="{{""}}{{(urlRelative}}{{servicePages.technicalAdvisoryAndComplianceServices.page)}}{{""}}" page="{{""}}{{(JSON.stringify(servicePages.technicalAdvisoryAndComplianceServices))}}{{""}}" class="lnk">{{servicePages.technicalAdvisoryAndComplianceServices.title}}</a></li>
+          </ul>
+        </li>
+        <li class="main noSubMenu"><a href="{{""}}{{(urlRelative)}}about" page="{{""}}{{(JSON.stringify(mainPages.about))}}{{""}}" class="lnk about">About</a></li>
+        <li class="main noSubMenu"><a href="{{""}}{{(urlRelative)}}contact" page="{{""}}{{(JSON.stringify(mainPages.contact))}}{{""}}" class="lnk">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
